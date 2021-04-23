@@ -130,6 +130,98 @@
           </div>
         </div>
       </section> 
+
+      <section class="session-projects">
+        <div class="session-header">
+          <h1>Projetos</h1>
+        </div>
+        <div class="projects">
+
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="img/ToDo.jpg" alt="imagem do projeto ToDo">
+            </div>
+            <div class="card-info">
+              <h2>ToDo List</h2>
+              <h3>JavaScript</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex repellendus nesciunt quis! Accusamus voluptates minus id. Quae incidunt vero quibusdam corporis, impedit pariatur deleniti, autem molestias aut quasi qui distinctio?</p>
+              <button class="btn">Saiba Mais</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="img/marathon.jpg" alt="imagem do projeto Maratona">
+            </div>
+            <div class="card-info">
+              <h2>Maratona</h2>
+              <h3>HTML, CSS</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus cum ut sint sed, eius inventore voluptate itaque, tenetur corrupti totam molestiae doloremque quaerat ipsum atque quos dignissimos quae aut quis?</p>
+              <button class="btn">Saiba Mais</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="img/beautiful-house.jpg" alt="imagem do projeto Casa Bela">
+            </div>
+            <div class="card-info">
+              <h2>Casa Bela</h2>
+              <h3>HTML</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione soluta eos asperiores nam aut cupiditate illum labore, distinctio, quo quibusdam aspernatur quae dolorum facere, ab repellendus natus eaque dicta reiciendis?</p>
+              <button class="btn">Saiba Mais</button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section class="session-contact" id="contact">
+        <div class="contact-wrapper">
+          <div class="contact-left"></div>
+          <div class="contact-right">
+            <h1>Contato</h1>
+            <form>
+              <div class="input-group">
+                <input type="text" class="field" id="name">
+                <label for="name" class="field-label">Nome</label>
+              </div>
+              <div class="input-group">
+                <input type="text" class="field" id="email">
+                <label for="email" class="field-label">E-mail</label>
+              </div>
+              <div class="input-group">
+                <textarea class="field" id="message"></textarea>
+                <label for="message" class="field-label">Mensagem</label>
+              </div>
+              <button type="submit" class="btn btn-submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="session-budget">
+        <div class="budget-wrapper">
+          <h1>Faça seu orçamento</h1>
+          <form>
+            <label for="qtd">Quantidade de Páginas</label>
+            <input type="number" min="1" name="qtd" id="qtd">
+            <label for="js">Preciso de um script JS</label>
+            <input type="checkbox" name="js" id="js">
+            <label>Layout</label>
+            <div class="group-layout">
+              <div>
+                <input type="radio" name="layout" id="layout-yes">
+                <label for="layout-yes">Preciso de um layout</label>
+              </div>
+              <div>
+                <input type="radio" name="layout" id="layout-no">
+                <label for="layout-no">Já tenho um layout</label>
+              </div>
+            </div>
+            <label for="deadline">Prazo</label>
+            <input type="range" name="deadline" id="deadline">
+            <button class="btn btn-budget" type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
   </body>
   <script src="js/custom.js"></script>
 </html>
