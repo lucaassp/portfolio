@@ -5,23 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png"/>
+    <link rel="icon" ype="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"/>
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Portifólio</title>
@@ -35,7 +21,7 @@
         <span>fechar</span>
       </div>
 
-      <header>
+      <header id="home">
         <div class="img-wrapper">
           <img src="img/bg.jpg" alt="" />
           <div class="banner">
@@ -49,14 +35,10 @@
         <nav>
           <ul class="menu">
             <li class="menu-item"><a href="" class="menu-link">Home</a></li>
-            <li class="menu-item">
-              <a href="" class="menu-link">Conhecimentos</a>
-            </li>
-            <li class="menu-item"><a href="" class="menu-link">Projetos</a></li>
-            <li class="menu-item"><a href="" class="menu-link">Contatos</a></li>
-            <li class="menu-item">
-              <a href="" class="menu-link">Orçamento</a>
-            </li>
+            <li class="menu-item"><a href="#acquirements" class="menu-link">Conhecimentos</a></li>
+            <li class="menu-item"><a href="#projects" class="menu-link">Projetos</a></li>
+            <li class="menu-item"><a href="#contact" class="menu-link">Contatos</a></li>
+            <li class="menu-item"><a href="#budget" class="menu-link">Orçamento</a></li>
           </ul>
         </nav>
         <div class="social-media">
@@ -65,6 +47,7 @@
           <a href=""><i class="fab fa-instagram"></i></a>
         </div>
       </aside>
+
       <section class="session-acquirements" id="acquirements">
         <div class="session-header">
           <h1>Conhecimentos</h1>
@@ -131,7 +114,7 @@
         </div>
       </section> 
 
-      <section class="session-projects">
+      <section class="session-projects" id="projects">
         <div class="session-header">
           <h1>Projetos</h1>
         </div>
@@ -197,7 +180,7 @@
         </div>
       </section>
 
-      <section class="session-budget">
+      <section class="session-budget" id="budget">
         <div class="budget-wrapper">
           <h1>Faça seu orçamento</h1>
           <form>
@@ -217,11 +200,31 @@
               </div>
             </div>
             <label for="deadline">Prazo</label>
-            <input type="range" name="deadline" id="deadline">
+            <input type="range" name="deadline" id="deadline" min="1" max="10">
+            <label id="price">R$ 0,00</label>
             <button class="btn btn-budget" type="submit">Enviar</button>
           </form>
         </div>
       </section>
+
+      <footer>
+        <div class="footer-content">
+          <p>
+            Copyright &copy; 2021, ETECIA DS - Todos os direitos reservados
+          </p>
+          <div class="social-list">
+            <ul>
+              <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href=""><i class="fab fa-instagram"></i></a></li>
+              <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <a href="#home" id="link-topo">
+        <i class="fas fa-arrow-up"></i>
+      </a>
   </body>
   <script src="js/custom.js"></script>
+  <script src="js/script.js"></script>
 </html>
